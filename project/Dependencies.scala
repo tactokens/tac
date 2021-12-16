@@ -107,7 +107,7 @@ object Dependencies {
       compilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1"),
       "com.softwaremill.sttp" %%% "core"       % "1.6.4",
       "com.tacplatform"     % "ztac"       % "0.1.0-SNAPSHOT",
-      "com.tacplatform"     % "ztac-bn256" % "0.1.5-SNAPSHOT",
+      //"com.tacplatform"     % "ztac-bn256" % "0.1.5-SNAPSHOT",
       "org.web3j"             % "crypto"       % "4.5.18"
     ) ++ scalapbRuntime.value ++ circe.value ++ protobuf.value
   )
@@ -142,6 +142,7 @@ object Dependencies {
 
   lazy val node = Def.setting(
     Seq(
+      "com.tacplatform"     % "ztac"       % "0.1.0-SNAPSHOT",
       "commons-net"          % "commons-net"              % "3.6",
       "org.apache.commons"   % "commons-lang3"            % "3.9",
       "com.iheart"           %% "ficus"                   % "1.4.7",

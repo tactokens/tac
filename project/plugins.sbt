@@ -1,5 +1,6 @@
 resolvers ++= Seq(
   Resolver.mavenLocal,
+  DefaultMavenRepository,
   Resolver.typesafeRepo("releases"),
   Resolver.sbtPluginRepo("releases")
 )

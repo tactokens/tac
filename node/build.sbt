@@ -4,6 +4,8 @@ import com.typesafe.sbt.packager.Keys.executableScriptName
 import com.typesafe.sbt.packager.archetypes.TemplateWriter
 import sbtassembly.MergeStrategy
 
+compileOrder := CompileOrder.JavaThenScala
+
 enablePlugins(RunApplicationSettings, JavaServerAppPackaging, UniversalDeployPlugin, JDebPackaging, SystemdPlugin, GitVersioning, VersionObject)
 
 resolvers ++= Seq(
